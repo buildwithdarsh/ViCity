@@ -1,0 +1,33 @@
+/**
+ * Seed data for the "coupons" store.
+ */
+
+const coupons = [
+  { id: "cpn-001", code: "WELCOME20", discountType: "percentage", discountValue: 20, maxDiscountAmount: 500000, minBookingValue: 1000000, usageLimit: 100, usedCount: 34, perUserLimit: 1, expiryDate: "2025-12-31", isActive: true, createdAt: "2024-01-01T00:00:00.000Z" },
+  { id: "cpn-002", code: "SUMMER15", discountType: "percentage", discountValue: 15, maxDiscountAmount: 400000, minBookingValue: 2000000, usageLimit: 50, usedCount: 12, perUserLimit: 1, expiryDate: "2025-06-30", isActive: true, createdAt: "2025-03-01T00:00:00.000Z" },
+  { id: "cpn-003", code: "FLAT500K", discountType: "fixed", discountValue: 500000, maxDiscountAmount: 500000, minBookingValue: 5000000, usageLimit: 20, usedCount: 8, perUserLimit: 1, expiryDate: "2025-09-30", isActive: true, createdAt: "2025-01-15T00:00:00.000Z" },
+  { id: "cpn-004", code: "LOYALTY10", discountType: "percentage", discountValue: 10, maxDiscountAmount: 300000, minBookingValue: 500000, usageLimit: null, usedCount: 45, perUserLimit: 3, expiryDate: "2025-12-31", isActive: true, createdAt: "2024-06-01T00:00:00.000Z" },
+  { id: "cpn-005", code: "DIWALI25", discountType: "percentage", discountValue: 25, maxDiscountAmount: 750000, minBookingValue: 3000000, usageLimit: 30, usedCount: 30, perUserLimit: 1, expiryDate: "2024-11-15", isActive: false, createdAt: "2024-10-01T00:00:00.000Z" },
+  { id: "cpn-006", code: "NEWYEAR2025", discountType: "percentage", discountValue: 20, maxDiscountAmount: 600000, minBookingValue: 2000000, usageLimit: 25, usedCount: 25, perUserLimit: 1, expiryDate: "2025-01-15", isActive: false, createdAt: "2024-12-15T00:00:00.000Z" },
+  { id: "cpn-007", code: "FLAT200K", discountType: "fixed", discountValue: 200000, maxDiscountAmount: 200000, minBookingValue: 1000000, usageLimit: 100, usedCount: 22, perUserLimit: 2, expiryDate: "2025-12-31", isActive: true, createdAt: "2025-02-01T00:00:00.000Z" },
+  { id: "cpn-008", code: "REPEAT5", discountType: "percentage", discountValue: 5, maxDiscountAmount: 150000, minBookingValue: 0, usageLimit: null, usedCount: 67, perUserLimit: 10, expiryDate: null, isActive: true, createdAt: "2024-01-01T00:00:00.000Z" },
+  { id: "cpn-009", code: "HONEYMOON30", discountType: "percentage", discountValue: 30, maxDiscountAmount: 1000000, minBookingValue: 5000000, usageLimit: 10, usedCount: 3, perUserLimit: 1, expiryDate: "2025-12-31", isActive: true, createdAt: "2025-02-14T00:00:00.000Z" },
+  { id: "cpn-010", code: "MONSOON20", discountType: "percentage", discountValue: 20, maxDiscountAmount: 500000, minBookingValue: 1500000, usageLimit: 40, usedCount: 0, perUserLimit: 1, expiryDate: "2025-09-30", isActive: true, createdAt: "2025-03-15T00:00:00.000Z" },
+  { id: "cpn-011", code: "VILLA1M", discountType: "fixed", discountValue: 1000000, maxDiscountAmount: 1000000, minBookingValue: 10000000, usageLimit: 5, usedCount: 2, perUserLimit: 1, expiryDate: "2025-06-30", isActive: true, createdAt: "2025-03-01T00:00:00.000Z" },
+  { id: "cpn-012", code: "WEEKEND10", discountType: "percentage", discountValue: 10, maxDiscountAmount: 250000, minBookingValue: 800000, usageLimit: 60, usedCount: 15, perUserLimit: 2, expiryDate: "2025-12-31", isActive: true, createdAt: "2025-01-01T00:00:00.000Z" },
+  { id: "cpn-013", code: "EARLYBIRD15", discountType: "percentage", discountValue: 15, maxDiscountAmount: 450000, minBookingValue: 1500000, usageLimit: 30, usedCount: 7, perUserLimit: 1, expiryDate: "2025-08-31", isActive: true, createdAt: "2025-02-01T00:00:00.000Z" },
+  { id: "cpn-014", code: "INDEPENDENCE", discountType: "fixed", discountValue: 150000, maxDiscountAmount: 150000, minBookingValue: 500000, usageLimit: 75, usedCount: 0, perUserLimit: 1, expiryDate: "2025-08-20", isActive: true, createdAt: "2025-03-16T00:00:00.000Z" },
+  { id: "cpn-015", code: "EXPIRED50", discountType: "percentage", discountValue: 50, maxDiscountAmount: 2000000, minBookingValue: 1000000, usageLimit: 5, usedCount: 5, perUserLimit: 1, expiryDate: "2024-03-31", isActive: false, createdAt: "2024-03-01T00:00:00.000Z" },
+  { id: "cpn-016", code: "CHRISTMAS", discountType: "percentage", discountValue: 20, maxDiscountAmount: 500000, minBookingValue: 2000000, usageLimit: 15, usedCount: 15, perUserLimit: 1, expiryDate: "2024-12-26", isActive: false, createdAt: "2024-12-01T00:00:00.000Z" },
+  { id: "cpn-017", code: "FLAT100K", discountType: "fixed", discountValue: 100000, maxDiscountAmount: 100000, minBookingValue: 0, usageLimit: 200, usedCount: 89, perUserLimit: 5, expiryDate: "2025-12-31", isActive: true, createdAt: "2024-01-01T00:00:00.000Z" },
+  { id: "cpn-018", code: "VIP40", discountType: "percentage", discountValue: 40, maxDiscountAmount: 1500000, minBookingValue: 8000000, usageLimit: 3, usedCount: 1, perUserLimit: 1, expiryDate: "2025-12-31", isActive: true, createdAt: "2025-03-10T00:00:00.000Z" },
+  { id: "cpn-019", code: "HOLI15", discountType: "percentage", discountValue: 15, maxDiscountAmount: 350000, minBookingValue: 1000000, usageLimit: 25, usedCount: 18, perUserLimit: 1, expiryDate: "2025-03-20", isActive: true, createdAt: "2025-03-01T00:00:00.000Z" },
+  { id: "cpn-020", code: "TESTFREE", discountType: "percentage", discountValue: 100, maxDiscountAmount: 100000000, minBookingValue: 0, usageLimit: 1, usedCount: 0, perUserLimit: 1, expiryDate: "2025-12-31", isActive: true, createdAt: "2025-03-16T00:00:00.000Z" },
+  { id: "cpn-021", code: "ZERO", discountType: "fixed", discountValue: 0, maxDiscountAmount: 0, minBookingValue: 0, usageLimit: null, usedCount: 0, perUserLimit: 1, expiryDate: null, isActive: true, createdAt: "2025-01-01T00:00:00.000Z" },
+  { id: "cpn-022", code: "LONGSTAY25", discountType: "percentage", discountValue: 25, maxDiscountAmount: 800000, minBookingValue: 3000000, usageLimit: 20, usedCount: 4, perUserLimit: 1, expiryDate: "2025-12-31", isActive: true, createdAt: "2025-01-15T00:00:00.000Z" },
+  { id: "cpn-023", code: "REFERRAL20", discountType: "percentage", discountValue: 20, maxDiscountAmount: 500000, minBookingValue: 1500000, usageLimit: null, usedCount: 11, perUserLimit: 1, expiryDate: "2025-12-31", isActive: true, createdAt: "2024-06-01T00:00:00.000Z" },
+  { id: "cpn-024", code: "FLASH50", discountType: "percentage", discountValue: 50, maxDiscountAmount: 1250000, minBookingValue: 5000000, usageLimit: 2, usedCount: 0, perUserLimit: 1, expiryDate: "2025-03-20", isActive: true, createdAt: "2025-03-17T00:00:00.000Z" },
+  { id: "cpn-025", code: "BIRTHDAY", discountType: "fixed", discountValue: 250000, maxDiscountAmount: 250000, minBookingValue: 1000000, usageLimit: null, usedCount: 19, perUserLimit: 1, expiryDate: null, isActive: true, createdAt: "2024-01-01T00:00:00.000Z" },
+];
+
+export default coupons;

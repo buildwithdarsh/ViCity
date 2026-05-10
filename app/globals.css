@@ -1,0 +1,545 @@
+@import "tailwindcss";
+
+/* Short mobile viewport — hero section compact layout */
+@custom-variant hero-short {
+  @media (max-height: 700px) and (max-width: 640px) {
+    @slot;
+  }
+}
+
+@theme {
+  --font-sans: var(--font-jakarta), system-ui, -apple-system, sans-serif;
+  --font-serif: var(--font-cormorant), Georgia, serif;
+
+  /* Brand palette — ViCity */
+  --color-espresso: #1A1208;
+  --color-gold: #C9A84C;
+  --color-gold-light: #d4b96a;
+  --color-gold-dark: #a88a3a;
+  --color-sand: #E8D5B0;
+  --color-cream: #FAF6EF;
+  --color-terracotta: #C4704A;
+  --color-warm-brown: #6B5B3E;
+
+  /* Extended gold scale */
+  --color-gold-50: #fdf9ef;
+  --color-gold-100: #f8eed5;
+  --color-gold-200: #f0daa8;
+  --color-gold-300: #e5c274;
+  --color-gold-400: #d4aa52;
+  --color-gold-500: #C9A84C;
+  --color-gold-600: #a88a3a;
+  --color-gold-700: #8a6d2d;
+  --color-gold-800: #6e5624;
+  --color-gold-900: #5a461e;
+
+  --color-charcoal: #1A1208;
+
+  --ease-luxury: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-smooth: cubic-bezier(0.25, 0.1, 0.25, 1);
+  --ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+/* ──────────────────────────────────────────────
+   Responsive spacing & typography custom props
+   ────────────────────────────────────────────── */
+
+:root {
+  /* Fluid spacing */
+  --space-xs:  clamp(0.5rem, 1.5vw, 0.75rem);
+  --space-sm:  clamp(0.75rem, 2vw, 1.25rem);
+  --space-md:  clamp(1.25rem, 3vw, 2rem);
+  --space-lg:  clamp(2rem, 5vw, 3.5rem);
+  --space-xl:  clamp(3rem, 7vw, 6rem);
+  --space-2xl: clamp(4rem, 10vw, 10rem);
+}
+
+/* ──────────────────────────────────────────────
+   Base
+   ────────────────────────────────────────────── */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  letter-spacing: -0.01em;
+  background-color: var(--color-cream);
+  color: var(--color-espresso);
+}
+
+::selection {
+  background: var(--color-sand);
+  color: var(--color-espresso);
+}
+
+/* ──────────────────────────────────────────────
+   Custom scrollbar
+   ────────────────────────────────────────────── */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-sand);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gold);
+}
+
+/* ──────────────────────────────────────────────
+   Typography — Apple-scale sizing
+   ────────────────────────────────────────────── */
+
+.text-hero {
+  font-size: clamp(3rem, 10vw, 7.5rem);
+  line-height: 1;
+  letter-spacing: -0.04em;
+  font-weight: 400;
+}
+
+.text-display {
+  font-size: clamp(2.25rem, 6vw, 5rem);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  font-weight: 400;
+}
+
+.text-headline {
+  font-size: clamp(1.75rem, 4vw, 3rem);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  font-weight: 400;
+}
+
+.text-subheadline {
+  font-size: clamp(1.125rem, 2vw, 1.5rem);
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+}
+
+/* ──────────────────────────────────────────────
+   Hero overlays — cinematic gradients
+   ────────────────────────────────────────────── */
+
+.hero-overlay {
+  background: linear-gradient(
+    to bottom,
+    rgba(26, 18, 8, 0.55) 0%,
+    rgba(26, 18, 8, 0.35) 30%,
+    rgba(26, 18, 8, 0.45) 60%,
+    rgba(26, 18, 8, 0.88) 100%
+  );
+}
+
+.hero-overlay-dark {
+  background: linear-gradient(
+    to bottom,
+    rgba(26, 18, 8, 0.6) 0%,
+    rgba(26, 18, 8, 0.7) 50%,
+    rgba(26, 18, 8, 0.92) 100%
+  );
+}
+
+/* ──────────────────────────────────────────────
+   Glass effects — frosted panels
+   ────────────────────────────────────────────── */
+
+.glass {
+  background: rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(40px) saturate(1.6);
+  -webkit-backdrop-filter: blur(40px) saturate(1.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+
+.glass-dark {
+  background: rgba(26, 18, 8, 0.4);
+  backdrop-filter: blur(40px) saturate(1.6);
+  -webkit-backdrop-filter: blur(40px) saturate(1.6);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.glass-light {
+  background: rgba(250, 246, 239, 0.7);
+  backdrop-filter: blur(40px) saturate(1.4);
+  -webkit-backdrop-filter: blur(40px) saturate(1.4);
+  border: 1px solid rgba(232, 213, 176, 0.3);
+}
+
+/* ──────────────────────────────────────────────
+   Gradient text
+   ────────────────────────────────────────────── */
+
+.text-gradient {
+  background: linear-gradient(135deg, var(--color-gold-300), var(--color-gold-600));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-light {
+  background: linear-gradient(135deg, #ffffff, rgba(255, 255, 255, 0.5));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-warm {
+  background: linear-gradient(135deg, var(--color-gold), var(--color-terracotta));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ──────────────────────────────────────────────
+   Glow effects
+   ────────────────────────────────────────────── */
+
+.glow-gold {
+  box-shadow: 0 0 120px 30px rgba(201, 168, 76, 0.12);
+}
+
+.glow-gold-sm {
+  box-shadow: 0 0 60px 15px rgba(201, 168, 76, 0.1);
+}
+
+.glow-warm {
+  box-shadow: 0 0 100px 25px rgba(196, 112, 74, 0.08);
+}
+
+/* ──────────────────────────────────────────────
+   Parallax helper
+   ────────────────────────────────────────────── */
+
+.parallax-section {
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+@media (hover: none) {
+  .parallax-section {
+    background-attachment: scroll;
+  }
+}
+
+/* ──────────────────────────────────────────────
+   Card interactions
+   ────────────────────────────────────────────── */
+
+.card-hover {
+  transition: transform 0.6s var(--ease-luxury), box-shadow 0.6s var(--ease-luxury);
+}
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 60px rgba(26, 18, 8, 0.08);
+}
+
+/* ──────────────────────────────────────────────
+   Image zoom on hover
+   ────────────────────────────────────────────── */
+
+.img-zoom {
+  overflow: hidden;
+}
+.img-zoom img {
+  transition: transform 1.2s var(--ease-out-expo);
+}
+.img-zoom:hover img {
+  transform: scale(1.08);
+}
+
+/* ──────────────────────────────────────────────
+   Line reveal animation
+   ────────────────────────────────────────────── */
+
+@keyframes line-reveal {
+  from { width: 0; }
+  to { width: 60px; }
+}
+.line-reveal {
+  animation: line-reveal 1s var(--ease-luxury) forwards;
+}
+
+/* ──────────────────────────────────────────────
+   Page entrance
+   ────────────────────────────────────────────── */
+
+main {
+  animation: pageIn 0.6s var(--ease-out-expo);
+}
+@keyframes pageIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slide-up {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
+.animate-slide-up {
+  animation: slide-up 0.3s ease-out;
+}
+
+/* ──────────────────────────────────────────────
+   Button press
+   ────────────────────────────────────────────── */
+
+button:active:not(:disabled) {
+  transform: scale(0.97);
+}
+
+/* ──────────────────────────────────────────────
+   Focus states
+   ────────────────────────────────────────────── */
+
+input:focus, select:focus, textarea:focus {
+  box-shadow: 0 0 0 3px rgba(201, 168, 76, 0.15);
+}
+
+/* ──────────────────────────────────────────────
+   Horizontal scroll mask
+   ────────────────────────────────────────────── */
+
+.mask-edges {
+  mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+}
+
+/* Hide scrollbar but keep scrolling */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* ──────────────────────────────────────────────
+   Decorative divider
+   ────────────────────────────────────────────── */
+
+.divider-gold {
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--color-gold), transparent);
+}
+
+/* ──────────────────────────────────────────────
+   Large decorative number
+   ────────────────────────────────────────────── */
+
+.deco-number {
+  font-size: clamp(6rem, 15vw, 14rem);
+  line-height: 1;
+  letter-spacing: -0.05em;
+  opacity: 0.04;
+  font-weight: 300;
+  user-select: none;
+  pointer-events: none;
+}
+
+/* ──────────────────────────────────────────────
+   Cinematic image frame
+   ────────────────────────────────────────────── */
+
+.cinematic-frame {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1.5rem;
+}
+
+.cinematic-frame::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  box-shadow: inset 0 0 80px rgba(26, 18, 8, 0.15);
+  pointer-events: none;
+}
+
+/* ──────────────────────────────────────────────
+   Respect user motion preferences
+   ────────────────────────────────────────────── */
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ──────────────────────────────────────────────
+   Mobile performance — reduce GPU-heavy effects
+   ────────────────────────────────────────────── */
+
+@media (max-width: 768px) {
+  .glass {
+    backdrop-filter: blur(20px) saturate(1.4);
+    -webkit-backdrop-filter: blur(20px) saturate(1.4);
+  }
+  .glass-dark {
+    backdrop-filter: blur(20px) saturate(1.4);
+    -webkit-backdrop-filter: blur(20px) saturate(1.4);
+  }
+  .glass-light {
+    backdrop-filter: blur(20px) saturate(1.2);
+    -webkit-backdrop-filter: blur(20px) saturate(1.2);
+  }
+  .glow-gold {
+    box-shadow: 0 0 60px 15px rgba(201, 168, 76, 0.1);
+  }
+  .glow-gold-sm {
+    box-shadow: 0 0 30px 8px rgba(201, 168, 76, 0.08);
+  }
+  .cinematic-frame {
+    border-radius: 1rem;
+  }
+  .cinematic-frame::after {
+    box-shadow: inset 0 0 40px rgba(26, 18, 8, 0.12);
+  }
+}
+
+/* ──────────────────────────────────────────────
+   Body scroll lock for mobile drawer/modal
+   ────────────────────────────────────────────── */
+
+body.menu-open {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}
+
+/* ──────────────────────────────────────────────
+   Floating WhatsApp button
+   ────────────────────────────────────────────── */
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 999;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--color-charcoal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-gold);
+  box-shadow: 0 4px 20px rgba(26, 18, 8, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.whatsapp-float:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 28px rgba(26, 18, 8, 0.3);
+}
+
+/* Hide on desktop where nav already has WhatsApp */
+@media (min-width: 1024px) {
+  .whatsapp-float {
+    display: none;
+  }
+}
+
+/* Marquee animations for The Unfiltered Corner */
+@keyframes marquee-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+@keyframes marquee-right {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+.animate-marquee-left {
+  animation: marquee-left 40s linear infinite;
+}
+.animate-marquee-right {
+  animation: marquee-right 40s linear infinite;
+}
+.animate-marquee-left:hover,
+.animate-marquee-right:hover {
+  animation-play-state: paused;
+}
+
+/* ── Preloader: Day → Night fade ── */
+
+/* Sun: starts fully visible, fades out */
+@keyframes pl-sun-out {
+  0%   { opacity: 1; }
+  50%  { opacity: 1; }
+  75%  { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+/* Night element: hidden, then fades in */
+@keyframes pl-night-in {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Window glow: subtle pulse at night */
+@keyframes pl-glow-in {
+  0%   { opacity: 0; }
+  100% { opacity: 0.9; }
+}
+
+/* General fade in */
+@keyframes pl-fade-in {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Letter rise */
+@keyframes pl-letter-in {
+  0%   { transform: translateY(60px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+/* Applied classes */
+.pl-sun {
+  animation: pl-sun-out 4s ease forwards;
+}
+.pl-moon {
+  opacity: 0;
+  animation: pl-night-in 1.2s ease forwards;
+  animation-delay: 2.2s;
+}
+.pl-star {
+  opacity: 0;
+  animation: pl-night-in 0.8s ease forwards;
+}
+.pl-moonlight {
+  opacity: 0;
+  animation: pl-night-in 1.5s ease forwards;
+  animation-delay: 2.5s;
+}
+.pl-window-glow {
+  opacity: 0;
+  animation: pl-glow-in 1s ease forwards;
+  animation-delay: 2.8s;
+}
+.pl-fade {
+  opacity: 0;
+  animation: pl-fade-in 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+.pl-letter {
+  opacity: 0;
+  animation: pl-letter-in 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+.pl-tagline {
+  opacity: 0;
+  animation: pl-fade-in 0.6s cubic-bezier(0.16, 1, 0.3, 1) 3.2s forwards;
+}
+.pl-status {
+  opacity: 0;
+  animation: pl-fade-in 0.4s ease 0.4s forwards;
+}

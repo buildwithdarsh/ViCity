@@ -1,0 +1,746 @@
+{
+  "audit": {
+    "generated_at": "2026-03-06T13:55:06.491279+00:00",
+    "tool": "custom_static_seo_reaudit_v3",
+    "scope": "entire app router pages + layouts + crawlability files",
+    "route_count": 41,
+    "indexable_route_count": 11,
+    "non_indexable_route_count": 30,
+    "score_percent": 100,
+    "issue_count": 0,
+    "issues_by_severity": {
+      "high": 0,
+      "medium": 0,
+      "low": 0
+    },
+    "issues_by_category": {}
+  },
+  "crawlability": {
+    "robots_route_exists": true,
+    "sitemap_route_exists": true,
+    "not_found_exists": true,
+    "favicon_or_icon_exists": true
+  },
+  "route_audit": [
+    {
+      "route": "/about",
+      "file": "app/(site)/about/page.tsx",
+      "indexable": true,
+      "metadata_sources": [
+        "app/(site)/about/layout.tsx",
+        "app/(site)/layout.tsx",
+        "app/layout.tsx"
+      ],
+      "has_metadata": true,
+      "noindex_detected": false,
+      "h1_count": 1,
+      "heading_skip_count": 0,
+      "image_issue_count": 0,
+      "link_issue_count": 0,
+      "indexable_client_fetch": false,
+      "structured_data_detected": true
+    },
+    {
+      "route": "/account/bookings",
+      "file": "app/(site)/account/bookings/page.tsx",
+      "indexable": false,
+      "metadata_sources": [
+        "app/(site)/account/layout.tsx",
+        "app/(site)/layout.tsx",
+        "app/layout.tsx"
+      ],
+      "has_metadata": true,
+      "noindex_detected": true,
+      "h1_count": 1,
+      "heading_skip_count": 0,
+      "image_issue_count": 0,
+      "link_issue_count": 0,
+      "indexable_client_fetch": false,
+      "structured_data_detected": true
+    },
+    {
+      "route": "/account/notifications",
+      "file": "app/(site)/account/notifications/page.tsx",
+      "indexable": false,
+      "metadata_sources": [
+        "app/(site)/account/layout.tsx",
+        "app/(site)/layout.tsx",
+        "app/layout.tsx"
+      ],
+      "has_metadata": true,
+      "noindex_detected": true,
+      "h1_count": 1,
+      "heading_skip_count": 0,
+      "image_issue_count": 0,
+      "link_issue_count": 0,
+      "indexable_client_fetch": false,
+      "structured_data_detected": true
+    },
+    {
+      "route": "/account",
+      "file": "app/(site)/account/page.tsx",
+      "indexable": false,
+      "metadata_sources": [
+        "app/(site)/account/layout.tsx",
+        "app/(site)/layout.tsx",
+        "app/layout.tsx"
+      ],
+      "has_metadata": true,
+      "noindex_detected": true,
+      "h1_count": 1,
+      "heading_skip_count": 0,
+      "image_issue_count": 0,
+      "link_issue_count": 0,
+      "indexable_client_fetch": false,
+      "structured_data_detected": true
+    },
+    {
+      "route": "/account/profile",
+      "file": "app/(site)/account/profile/page.tsx",
+      "indexable": false,
+      "metadata_sources": [
+        "app/(site)/account/layout.tsx",
+        "app/(site)/layout.tsx",
+        "app/layout.tsx"
+      ],
+      "has_metadata": true,
+      "noindex_detected": true,
+      "h1_count": 1,
+      "heading_skip_count": 0,
+      "image_issue_count": 0,
+      "link_issue_count": 0,
+      "indexable_client_fetch": false,
+      "structured_data_detected": true
+    },
+    {
+      "route": "/account/reviews",
+      "file": "app/(site)/account/reviews/page.tsx",
+      "indexable": false,
+      "metadata_sources": [
+        "app/(site)/account/layout.tsx",
+        "app/(site)/layout.tsx",
+        "app/layout.tsx"
+      ],
+      "has_metadata": true,
+      "noindex_detected": true,
+      "h1_count": 1,
+      "heading_skip_count": 0,
+      "image_issue_count": 0,
+      "link_issue_count": 0,
+      "indexable_client_fetch": false,
+      "structured_data_detected": true
+    },
+    {
+      "route": "/auth/forgot-password",
+      "file": "app/(site)/auth/forgot-password/page.tsx",
+      "indexable": false,
+      "metadata_sources": [
+        "app/(site)/auth/layout.tsx",
+        "app/(site)/layout.tsx",
+        "app/layout.tsx"
+      ],
+      "has_metadata": true,
+      "noindex_detected": true,
+      "h1_count": 2,
+      "heading_skip_count": 0,
+      "image_issue_count": 0,
+      "link_issue_count": 0,
+      "indexable_client_fetch": false,
+      "structured_data_detected": true
+    },
+    {
+      "route": "/auth/login",
+      "file": "app/(site)/auth/login/page.tsx",
+      "indexable": false,
+      "metadata_sources": [
+        "app/(site)/auth/layout.tsx",
+        "app/(site)/layout.tsx",
+        "app/layout.tsx"
+      ],
+      "has_metadata": true,
+      "noindex_detected": true,
+      "h1_count": 1,
+      "heading_skip_count": 0,
+      "image_issue_count": 0,
+      "link_issue_count": 0,
+      "indexable_client_fetch": false,
+      "structured_data_detected": true
+    },
+    {
+      "route": "/auth/register",
+      "file": "app/(site)/auth/register/page.tsx",
+      "indexable": false,
+      "metadata_sources": [
+        "app/(site)/auth/layout.tsx",
+        "app/(site)/layout.tsx",
+        "app/layout.tsx"
+      ],
+      "has_metadata": true,
+      "noindex_detected": true,
+      "h1_count": 1,
+      "heading_skip_count": 0,
+      "image_issue_count": 0,
+      "link_issue_count": 0,
+      "indexable_client_fetch": false,
+      "structured_data_detected": true
+    },
+    {
+      "route": "/booking/confirmation",
+      "file": "app/(site)/booking/confirmation/page.tsx",
+      "indexable": false,
+      "metadata_sources": [
+        "app/(site)/booking/layout.tsx",
+        "app/(site)/layout.tsx",
+        "app/layout.tsx"
+      ],
+      "has_metadata": true,
+      "noindex_detected": true,
+      "h1_count": 1,
+      "heading_skip_count": 0,
+      "image_issue_count": 0,
+      "link_issue_count": 0,
+      "indexable_client_fetch": false,
+      "structured_data_detected": true
+    },
+    {
+      "route": "/booking/lookup",
+      "file": "app/(site)/booking/lookup/page.tsx",
+      "indexable": false,
+      "metadata_sources": [
+        "app/(site)/booking/layout.tsx",
+        "app/(site)/layout.tsx",
+        "app/layout.tsx"
+      ],
+      "has_metadata": true,
+      "noindex_detected": true,
+      "h1_count": 1,
+      "heading_skip_count": 0,
+      "image_issue_count": 0,
+      "link_issue_count": 0,
+      "indexable_client_fetch": false,
+      "structured_data_detected": true
+    },
+    {
+      "route": "/booking",
+      "file": "app/(site)/booking/page.tsx",
+      "indexable": false,
+      "metadata_sources": [
+        "app/(site)/booking/layout.tsx",
+        "app/(site)/layout.tsx",
+        "app/layout.tsx"
+      ],
+      "has_metadata": true,
+      "noindex_detected": true,
+      "h1_count": 1,
+      "heading_skip_count": 0,
+      "image_issue_count": 0,
+      "link_issue_count": 0,
+      "indexable_client_fetch": false,
+      "structured_data_detected": true
+    },
+    {
+      "route": "/cancellation",
+      "file": "app/(site)/cancellation/page.tsx",
+      "indexable": true,
+      "metadata_sources": [
+        "app/(site)/cancellation/page.tsx",
+        "app/(site)/layout.tsx",
+        "app/layout.tsx"
+      ],
+      "has_metadata": true,
+      "noindex_detected": false,
+      "h1_count": 1,
+      "heading_skip_count": 0,
+      "image_issue_count": 0,
+      "link_issue_count": 0,
+      "indexable_client_fetch": false,
+      "structured_data_detected": true
+    },
+    {
+      "route": "/contact",
+      "file": "app/(site)/contact/page.tsx",
+      "indexable": true,
+      "metadata_sources": [
+        "app/(site)/contact/layout.tsx",
+        "app/(site)/layout.tsx",
+        "app/layout.tsx"
+      ],
+      "has_metadata": true,
+      "noindex_detected": false,
+      "h1_count": 1,
+      "heading_skip_count": 0,
+      "image_issue_count": 0,
+      "link_issue_count": 0,
+      "indexable_client_fetch": false,
+      "structured_data_detected": true
+    },
+    {
+      "route": "/gallery",
+      "file": "app/(site)/gallery/page.tsx",
+      "indexable": true,
+      "metadata_sources": [
+        "app/(site)/gallery/layout.tsx",
+        "app/(site)/layout.tsx",
+        "app/layout.tsx"
+      ],
+      "has_metadata": true,
+      "noindex_detected": false,
+      "h1_count": 1,
+      "heading_skip_count": 0,
+      "image_issue_count": 0,
+      "link_issue_count": 0,
+      "indexable_client_fetch": false,
+      "structured_data_detected": true
+    },
+    {
+      "route": "/",
+      "file": "app/(site)/page.tsx",
+      "indexable": true,
+      "metadata_sources": [
+        "app/(site)/layout.tsx",
+        "app/layout.tsx"
+      ],
+      "has_metadata": true,
+      "noindex_detected": false,
+      "h1_count": 1,
+      "heading_skip_count": 0,
+      "image_issue_count": 0,
+      "link_issue_count": 0,
+      "indexable_client_fetch": false,
+      "structured_data_detected": true
+    },
+    {
+      "route": "/privacy",
+      "file": "app/(site)/privacy/page.tsx",
+      "indexable": true,
+      "metadata_sources": [
+        "app/(site)/privacy/page.tsx",
+        "app/(site)/layout.tsx",
+        "app/layout.tsx"
+      ],
+      "has_metadata": true,
+      "noindex_detected": false,
+      "h1_count": 1,
+      "heading_skip_count": 0,
+      "image_issue_count": 0,
+      "link_issue_count": 0,
+      "indexable_client_fetch": false,
+      "structured_data_detected": true
+    },
+    {
+      "route": "/refund",
+      "file": "app/(site)/refund/page.tsx",
+      "indexable": true,
+      "metadata_sources": [
+        "app/(site)/refund/page.tsx",
+        "app/(site)/layout.tsx",
+        "app/layout.tsx"
+      ],
+      "has_metadata": true,
+      "noindex_detected": false,
+      "h1_count": 1,
+      "heading_skip_count": 0,
+      "image_issue_count": 0,
+      "link_issue_count": 0,
+      "indexable_client_fetch": false,
+      "structured_data_detected": true
+    },
+    {
+      "route": "/reviews",
+      "file": "app/(site)/reviews/page.tsx",
+      "indexable": true,
+      "metadata_sources": [
+        "app/(site)/reviews/layout.tsx",
+        "app/(site)/layout.tsx",
+        "app/layout.tsx"
+      ],
+      "has_metadata": true,
+      "noindex_detected": false,
+      "h1_count": 1,
+      "heading_skip_count": 0,
+      "image_issue_count": 0,
+      "link_issue_count": 0,
+      "indexable_client_fetch": false,
+      "structured_data_detected": true
+    },
+    {
+      "route": "/rooms/[id]",
+      "file": "app/(site)/rooms/[id]/page.tsx",
+      "indexable": true,
+      "metadata_sources": [
+        "app/(site)/rooms/[id]/page.tsx",
+        "app/(site)/rooms/layout.tsx",
+        "app/(site)/layout.tsx",
+        "app/layout.tsx"
+      ],
+      "has_metadata": true,
+      "noindex_detected": false,
+      "h1_count": 1,
+      "heading_skip_count": 0,
+      "image_issue_count": 0,
+      "link_issue_count": 0,
+      "indexable_client_fetch": false,
+      "structured_data_detected": true
+    },
+    {
+      "route": "/rooms",
+      "file": "app/(site)/rooms/page.tsx",
+      "indexable": true,
+      "metadata_sources": [
+        "app/(site)/rooms/layout.tsx",
+        "app/(site)/layout.tsx",
+        "app/layout.tsx"
+      ],
+      "has_metadata": true,
+      "noindex_detected": false,
+      "h1_count": 1,
+      "heading_skip_count": 0,
+      "image_issue_count": 0,
+      "link_issue_count": 0,
+      "indexable_client_fetch": false,
+      "structured_data_detected": true
+    },
+    {
+      "route": "/terms",
+      "file": "app/(site)/terms/page.tsx",
+      "indexable": true,
+      "metadata_sources": [
+        "app/(site)/terms/page.tsx",
+        "app/(site)/layout.tsx",
+        "app/layout.tsx"
+      ],
+      "has_metadata": true,
+      "noindex_detected": false,
+      "h1_count": 1,
+      "heading_skip_count": 0,
+      "image_issue_count": 0,
+      "link_issue_count": 0,
+      "indexable_client_fetch": false,
+      "structured_data_detected": true
+    },
+    {
+      "route": "/admin/amenities",
+      "file": "app/admin/amenities/page.tsx",
+      "indexable": false,
+      "metadata_sources": [
+        "app/admin/layout.tsx",
+        "app/layout.tsx"
+      ],
+      "has_metadata": true,
+      "noindex_detected": true,
+      "h1_count": 1,
+      "heading_skip_count": 0,
+      "image_issue_count": 0,
+      "link_issue_count": 0,
+      "indexable_client_fetch": false,
+      "structured_data_detected": true
+    },
+    {
+      "route": "/admin/bookings/[id]",
+      "file": "app/admin/bookings/[id]/page.tsx",
+      "indexable": false,
+      "metadata_sources": [
+        "app/admin/layout.tsx",
+        "app/layout.tsx"
+      ],
+      "has_metadata": true,
+      "noindex_detected": true,
+      "h1_count": 1,
+      "heading_skip_count": 0,
+      "image_issue_count": 0,
+      "link_issue_count": 0,
+      "indexable_client_fetch": false,
+      "structured_data_detected": true
+    },
+    {
+      "route": "/admin/bookings",
+      "file": "app/admin/bookings/page.tsx",
+      "indexable": false,
+      "metadata_sources": [
+        "app/admin/layout.tsx",
+        "app/layout.tsx"
+      ],
+      "has_metadata": true,
+      "noindex_detected": true,
+      "h1_count": 1,
+      "heading_skip_count": 0,
+      "image_issue_count": 0,
+      "link_issue_count": 0,
+      "indexable_client_fetch": false,
+      "structured_data_detected": true
+    },
+    {
+      "route": "/admin/coupons",
+      "file": "app/admin/coupons/page.tsx",
+      "indexable": false,
+      "metadata_sources": [
+        "app/admin/layout.tsx",
+        "app/layout.tsx"
+      ],
+      "has_metadata": true,
+      "noindex_detected": true,
+      "h1_count": 1,
+      "heading_skip_count": 0,
+      "image_issue_count": 0,
+      "link_issue_count": 0,
+      "indexable_client_fetch": false,
+      "structured_data_detected": true
+    },
+    {
+      "route": "/admin/dashboard",
+      "file": "app/admin/dashboard/page.tsx",
+      "indexable": false,
+      "metadata_sources": [
+        "app/admin/layout.tsx",
+        "app/layout.tsx"
+      ],
+      "has_metadata": true,
+      "noindex_detected": true,
+      "h1_count": 1,
+      "heading_skip_count": 0,
+      "image_issue_count": 0,
+      "link_issue_count": 0,
+      "indexable_client_fetch": false,
+      "structured_data_detected": true
+    },
+    {
+      "route": "/admin/login",
+      "file": "app/admin/login/page.tsx",
+      "indexable": false,
+      "metadata_sources": [
+        "app/admin/layout.tsx",
+        "app/layout.tsx"
+      ],
+      "has_metadata": true,
+      "noindex_detected": true,
+      "h1_count": 1,
+      "heading_skip_count": 0,
+      "image_issue_count": 0,
+      "link_issue_count": 0,
+      "indexable_client_fetch": false,
+      "structured_data_detected": true
+    },
+    {
+      "route": "/admin/notifications",
+      "file": "app/admin/notifications/page.tsx",
+      "indexable": false,
+      "metadata_sources": [
+        "app/admin/layout.tsx",
+        "app/layout.tsx"
+      ],
+      "has_metadata": true,
+      "noindex_detected": true,
+      "h1_count": 1,
+      "heading_skip_count": 0,
+      "image_issue_count": 0,
+      "link_issue_count": 0,
+      "indexable_client_fetch": false,
+      "structured_data_detected": true
+    },
+    {
+      "route": "/admin",
+      "file": "app/admin/page.tsx",
+      "indexable": false,
+      "metadata_sources": [
+        "app/admin/layout.tsx",
+        "app/layout.tsx"
+      ],
+      "has_metadata": true,
+      "noindex_detected": true,
+      "h1_count": 0,
+      "heading_skip_count": 0,
+      "image_issue_count": 0,
+      "link_issue_count": 0,
+      "indexable_client_fetch": false,
+      "structured_data_detected": true
+    },
+    {
+      "route": "/admin/payments/[id]",
+      "file": "app/admin/payments/[id]/page.tsx",
+      "indexable": false,
+      "metadata_sources": [
+        "app/admin/layout.tsx",
+        "app/layout.tsx"
+      ],
+      "has_metadata": true,
+      "noindex_detected": true,
+      "h1_count": 1,
+      "heading_skip_count": 0,
+      "image_issue_count": 0,
+      "link_issue_count": 0,
+      "indexable_client_fetch": false,
+      "structured_data_detected": true
+    },
+    {
+      "route": "/admin/payments",
+      "file": "app/admin/payments/page.tsx",
+      "indexable": false,
+      "metadata_sources": [
+        "app/admin/layout.tsx",
+        "app/layout.tsx"
+      ],
+      "has_metadata": true,
+      "noindex_detected": true,
+      "h1_count": 1,
+      "heading_skip_count": 0,
+      "image_issue_count": 0,
+      "link_issue_count": 0,
+      "indexable_client_fetch": false,
+      "structured_data_detected": true
+    },
+    {
+      "route": "/admin/pricing",
+      "file": "app/admin/pricing/page.tsx",
+      "indexable": false,
+      "metadata_sources": [
+        "app/admin/layout.tsx",
+        "app/layout.tsx"
+      ],
+      "has_metadata": true,
+      "noindex_detected": true,
+      "h1_count": 1,
+      "heading_skip_count": 0,
+      "image_issue_count": 0,
+      "link_issue_count": 0,
+      "indexable_client_fetch": false,
+      "structured_data_detected": true
+    },
+    {
+      "route": "/admin/reports",
+      "file": "app/admin/reports/page.tsx",
+      "indexable": false,
+      "metadata_sources": [
+        "app/admin/layout.tsx",
+        "app/layout.tsx"
+      ],
+      "has_metadata": true,
+      "noindex_detected": true,
+      "h1_count": 1,
+      "heading_skip_count": 0,
+      "image_issue_count": 0,
+      "link_issue_count": 0,
+      "indexable_client_fetch": false,
+      "structured_data_detected": true
+    },
+    {
+      "route": "/admin/reviews",
+      "file": "app/admin/reviews/page.tsx",
+      "indexable": false,
+      "metadata_sources": [
+        "app/admin/layout.tsx",
+        "app/layout.tsx"
+      ],
+      "has_metadata": true,
+      "noindex_detected": true,
+      "h1_count": 1,
+      "heading_skip_count": 0,
+      "image_issue_count": 0,
+      "link_issue_count": 0,
+      "indexable_client_fetch": false,
+      "structured_data_detected": true
+    },
+    {
+      "route": "/admin/rooms",
+      "file": "app/admin/rooms/page.tsx",
+      "indexable": false,
+      "metadata_sources": [
+        "app/admin/layout.tsx",
+        "app/layout.tsx"
+      ],
+      "has_metadata": true,
+      "noindex_detected": true,
+      "h1_count": 0,
+      "heading_skip_count": 0,
+      "image_issue_count": 0,
+      "link_issue_count": 0,
+      "indexable_client_fetch": false,
+      "structured_data_detected": true
+    },
+    {
+      "route": "/admin/rooms/types",
+      "file": "app/admin/rooms/types/page.tsx",
+      "indexable": false,
+      "metadata_sources": [
+        "app/admin/layout.tsx",
+        "app/layout.tsx"
+      ],
+      "has_metadata": true,
+      "noindex_detected": true,
+      "h1_count": 1,
+      "heading_skip_count": 0,
+      "image_issue_count": 0,
+      "link_issue_count": 0,
+      "indexable_client_fetch": false,
+      "structured_data_detected": true
+    },
+    {
+      "route": "/admin/rooms/units",
+      "file": "app/admin/rooms/units/page.tsx",
+      "indexable": false,
+      "metadata_sources": [
+        "app/admin/layout.tsx",
+        "app/layout.tsx"
+      ],
+      "has_metadata": true,
+      "noindex_detected": true,
+      "h1_count": 1,
+      "heading_skip_count": 0,
+      "image_issue_count": 0,
+      "link_issue_count": 0,
+      "indexable_client_fetch": false,
+      "structured_data_detected": true
+    },
+    {
+      "route": "/admin/settings",
+      "file": "app/admin/settings/page.tsx",
+      "indexable": false,
+      "metadata_sources": [
+        "app/admin/layout.tsx",
+        "app/layout.tsx"
+      ],
+      "has_metadata": true,
+      "noindex_detected": true,
+      "h1_count": 2,
+      "heading_skip_count": 0,
+      "image_issue_count": 0,
+      "link_issue_count": 0,
+      "indexable_client_fetch": false,
+      "structured_data_detected": true
+    },
+    {
+      "route": "/admin/users/[id]",
+      "file": "app/admin/users/[id]/page.tsx",
+      "indexable": false,
+      "metadata_sources": [
+        "app/admin/layout.tsx",
+        "app/layout.tsx"
+      ],
+      "has_metadata": true,
+      "noindex_detected": true,
+      "h1_count": 1,
+      "heading_skip_count": 0,
+      "image_issue_count": 0,
+      "link_issue_count": 0,
+      "indexable_client_fetch": false,
+      "structured_data_detected": true
+    },
+    {
+      "route": "/admin/users",
+      "file": "app/admin/users/page.tsx",
+      "indexable": false,
+      "metadata_sources": [
+        "app/admin/layout.tsx",
+        "app/layout.tsx"
+      ],
+      "has_metadata": true,
+      "noindex_detected": true,
+      "h1_count": 1,
+      "heading_skip_count": 0,
+      "image_issue_count": 0,
+      "link_issue_count": 0,
+      "indexable_client_fetch": false,
+      "structured_data_detected": true
+    }
+  ],
+  "issues": []
+}
